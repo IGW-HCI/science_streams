@@ -18,3 +18,6 @@
 
 # Ignore ENV Variables
 .env
+
+# Ignore vagrant files
+.vagrant/
