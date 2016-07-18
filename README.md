@@ -1,24 +1,12 @@
-# README
+# Science streams
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A platform for [sparkling-science](https://www.sparklingscience.at/en) projects
 
-Things you may want to cover:
+## Set up development environment
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. clone the repository
+2. install [vagrant](https://www.vagrantup.com)
+3. run `vagrant up`
+4. ssh into the vagrant machine with `vagrant ssh`
+5. run the setup script `bin/rails setup`
+6. run the development server `bin/server`
