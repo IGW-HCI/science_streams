@@ -1,6 +1,6 @@
-require_relative 'boot'
+require_relative "boot"
 
-require 'rails/all'
+require "rails/all"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -14,7 +14,7 @@ module ScienceStreams
 
     # Set up logging to be the same in all environments but control the level
     # through an environment variable.
-    config.log_level = ENV['LOG_LEVEL']
+    config.log_level = ENV["LOG_LEVEL"]
 
     # Action mailer settings.
     # config.action_mailer.delivery_method = :smtp
@@ -29,11 +29,11 @@ module ScienceStreams
     # }
 
     config.action_mailer.default_url_options = {
-      host: ENV['ACTION_MAILER_HOST']
+      host: ENV["ACTION_MAILER_HOST"]
     }
 
     config.action_mailer.default_options = {
-      from: ENV['ACTION_MAILER_DEFAULT_FROM']
+      from: ENV["ACTION_MAILER_DEFAULT_FROM"]
     }
 
     # Set Redis as the back-end for the cache.
