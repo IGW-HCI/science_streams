@@ -1,4 +1,4 @@
-class ProjectUser < ApplicationRecord
+class ProjectsUser < ApplicationRecord
   enum project_role: [:collaborator, :admin]
 
   belongs_to :project, touch: true

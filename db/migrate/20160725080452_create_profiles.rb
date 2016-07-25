@@ -2,9 +2,10 @@ class CreateProfiles < ActiveRecord::Migration[5.0]
   def change
     create_table :profiles do |t|
       t.references :user, foreign_key: true
-      t.string :nickname, index: true
+      t.string :nickname
       t.string :first_name
       t.string :last_name
+      t.string :slug, index: true
 
       t.timestamps
     end
