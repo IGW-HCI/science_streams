@@ -32,6 +32,7 @@ install Git git
 install memcached memcached
 install Redis redis-server
 install RabbitMQ rabbitmq-server
+install imagemagic imagemagic
 
 install PostgreSQL postgresql postgresql-contrib libpq-dev
 sudo sed -i "s/#listen_address.*/listen_addresses '*'/" /etc/postgresql/9.5/main/postgresql.conf
