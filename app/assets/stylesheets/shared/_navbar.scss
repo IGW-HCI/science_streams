@@ -1,0 +1,42 @@
+nav {
+  @extend .navbar;
+  @extend .navbar-light;
+  @extend .bg-faded;
+
+  border-bottom-color: $brand-primary;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+
+
+  .logo {
+    @extend .navbar-brand;
+  }
+
+  ul {
+    @extend .nav;
+    @extend .navbar-nav;
+    @extend .pull-xs-right;
+
+    >li {
+      @extend .nav-item;
+
+      >a {
+        @extend .nav-link;
+      }
+
+      >a[data-toggle="dropdown"] {
+        @extend .dropdown-toggle;
+      }
+
+      >.project-selector,
+      >.user-info {
+        @extend .dropdown-menu;
+
+        >a,
+        >span {
+          @extend .dropdown-item;
+        }
+      }
+    }
+  }
+}

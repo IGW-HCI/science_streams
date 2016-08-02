@@ -1,0 +1,27 @@
+<nav>
+    <%= link_to '#', class: 'logo' do %>
+        <%= image_tag 'logo' %>
+    <% end %>
+    <ul>
+        <li class="projects">
+          <a data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Death star</a>
+          <div class="project-selector" aria-labelledby="Preview">
+            <% Project.all.each do |project| %>
+              <%= link_to project.title, '#' %>
+            <% end %>
+          </div>
+        </li>
+        <li class="user">
+          <a data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">@nickname</a>
+          <div class="user-info" aria-labelledby="Preview">
+            <span>Signed in as <b>@nickname</b></span>
+            <div class="dropdown-divider"></div>
+            <a href="#">Dashboard</a>
+            <a href="#">Your Profile</a>
+            <a href="#">Help</a>
+            <div class="dropdown-divider"></div>
+            <a href="#">Logout</a>
+          </div>
+        </li>
+    </ul>
+</nav>

@@ -16,6 +16,7 @@ gem "foreman", "~> 0.78"
 gem "turbolinks", "~> 5.0"
 gem "devise", "~> 4.2"
 gem "paperclip", "~> 5.0"
+gem "flutie", "~> 2.0"
 
 ################################
 #
@@ -33,8 +34,14 @@ gem "jbuilder", "~> 2.5"
 
 gem "jquery-rails"
 gem "sass-rails", "~> 5.0"
+
 gem "coffee-rails", "~> 4.2"
 gem "uglifier", ">= 1.3.0"
+gem "bootstrap", "~> 4.0.0.alpha3.1"
+
+source "https://rails-assets.org" do
+  gem "rails-assets-tether", "~> 1.1.0"
+end
 
 ################################
 #
