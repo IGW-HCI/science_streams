@@ -42,7 +42,7 @@ gem "rails-timeago", "~> 2.14"
 gem "font-awesome-sass", "~> 4.6.2"
 
 source "https://rails-assets.org" do
-  gem "rails-assets-tether", "~> 1.1.0"
+  gem "rails-assets-tether", "~> 1.3"
 end
 
 ################################
