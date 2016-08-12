@@ -1,5 +1,6 @@
 nav {
   @extend .navbar;
+  @extend .navbar-fixed-top;
   @extend .navbar-light;
   @extend .bg-faded;
 

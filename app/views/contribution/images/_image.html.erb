@@ -1,0 +1,9 @@
+<div class="card">
+    <%= image_tag image.image.url(:medium), class: 'card-img-top img-fluid', size: '400x200' %>
+    <div class="card-block">
+        <% if image.comment.present? %>
+          <p class="card-text"><%= image.comment %></p>
+        <% end %>
+        <p class="card-text"><small class="text-muted">Eingereicht von <emph><%= image.user.profile.nickname %></emph> <%= timeago_tag image.created_at, force: true %></small></p>
+    </div>
+</div>

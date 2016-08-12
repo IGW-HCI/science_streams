@@ -1,0 +1,33 @@
+<div class="container">
+    <h1><%= @project.title %></h1>
+    <ul class="project-users">
+        <%= render @project.users %>
+    </ul>
+
+    <br>
+
+    <div class="contributions-list">
+        <%= render @contributions %>
+    </div>
+</div>
+
+<div class="project-about-container--full">
+    <div class="project-about">
+        <div class="project-about__icon">
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-info fa-stack-1x fa-inverse"></i>
+            </span>
+        </div>
+        <div class="project-about__description">
+            <h1>Über <%= @project.title %></h1>
+            <p><%= @project.description %></p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="contributions-list">
+        <%= render @contributions %>
+    </div>
+</div>

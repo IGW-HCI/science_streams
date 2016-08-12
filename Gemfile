@@ -38,6 +38,8 @@ gem "sass-rails", "~> 5.0"
 gem "coffee-rails", "~> 4.2"
 gem "uglifier", ">= 1.3.0"
 gem "bootstrap", "~> 4.0.0.alpha3.1"
+gem "rails-timeago", "~> 2.14"
+gem "font-awesome-sass", "~> 4.6.2"
 
 source "https://rails-assets.org" do
   gem "rails-assets-tether", "~> 1.1.0"

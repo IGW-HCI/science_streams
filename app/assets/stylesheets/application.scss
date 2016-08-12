@@ -1,5 +1,11 @@
 @import "settings/variables";
 @import "bootstrap_custom/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 @import "settings/typography";
 
+@import "shared/layout";
 @import "shared/navbar";
+
+@import "projects";
+@import "contributions";

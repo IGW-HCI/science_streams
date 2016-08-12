@@ -1,0 +1,10 @@
+.contributions-list {
+  @extend .card-columns;
+  column-count: 3;
+}
+
+.contribution {
+  @extend .card;
+  // @include make-col-ready(4);
+  // @include make-col(4);
+}

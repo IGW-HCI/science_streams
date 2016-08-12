@@ -1,0 +1,80 @@
+.projects-list {
+  @extend .card-columns;
+  column-count: 3;
+}
+
+.project {
+  @extend .card;
+}
+
+.project__image {
+  @extend .img-fluid;
+}
+
+.project-details {
+  @extend .card-block;
+}
+
+.project-details__title {
+  @extend .card-title;
+}
+
+.project-details__description {
+  @extend .card-text;
+  @include clearfix();
+}
+
+.project-details__view-project-button {
+  @extend .btn;
+  @extend .btn-link;
+  @extend .pull-right;
+}
+
+.project-users {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  >li {
+    display: inline;
+  }
+}
+
+.project-users__profile-image {
+  @extend .img-rounded;
+  border: 2px solid;
+  border-color: $light-gray;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
+
+.project-users__profile-image--admin {
+  border-color: $brand-primary;
+}
+
+.project-about-container--full {
+  @include make-container();
+  background-color: $brand-primary;
+  margin: 20px auto;
+}
+
+.project-about {
+   @include make-row();
+   margin: 0 20px;
+   padding: 30px;
+}
+
+.project-about__icon {
+  @include make-col-ready(1);
+  @include make-col(1);
+}
+
+.project-about__description {
+  @include make-col-ready(11);
+  @include make-col(11);
+
+  >p {
+    margin: 0;
+  }
+}

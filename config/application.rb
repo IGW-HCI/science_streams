@@ -16,6 +16,10 @@ module ScienceStreams
     # through an environment variable.
     config.log_level = ENV["LOG_LEVEL"]
 
+    config.i18n.default_locale = :de
+    config.i18n.available_locales = [:de, :en]
+    config.i18n.fallbacks = true
+
     # Action mailer settings.
     # config.action_mailer.delivery_method = :smtp
     # config.action_mailer.smtp_settings = {

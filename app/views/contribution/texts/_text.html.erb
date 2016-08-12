@@ -1,0 +1,10 @@
+<div class="card card-block">
+    <blockquote class="card-blockquote">
+        <p><%= text.body.html_safe %></p>
+        <footer>
+            <small class="text-muted">
+                Eingereicht von <emph><%= text.user.profile.nickname %></emph> <%= timeago_tag text.created_at, force: true %>
+            </small>
+        </footer>
+    </blockquote>
+</div>

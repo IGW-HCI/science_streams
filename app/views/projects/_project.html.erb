@@ -1,0 +1,10 @@
+<div class="project">
+  <div class="project-details">
+    <h4 class="project-details__title"><%= project.title %></h4>
+  </div>
+  <%= image_tag project.image.url(:medium), class: 'project__image' %>
+  <div class="project-details">
+    <p class="project-details__description"><%= truncate project.description, length: 255 %></p>
+    <%= link_to 'Projekt ansehen', project_path(project), class: 'project-details__view-project-button' %>
+  </div>
+</div>
