@@ -7,6 +7,8 @@ source "https://rubygems.org"
 ################################
 
 gem "rails", "~> 5.0.0"
+gem "trailblazer", "~> 1.1"
+gem "trailblazer-rails", "~> 0.4"
 gem "pg", "~> 0.18"
 gem "puma", "~> 3.0"
 gem "dotenv-rails", "~> 2.1"
@@ -15,8 +17,18 @@ gem "redis", "~> 3.0"
 gem "foreman", "~> 0.78"
 gem "turbolinks", "~> 5.0"
 gem "devise", "~> 4.2"
-gem "paperclip", "~> 5.0"
 gem "flutie", "~> 2.0"
+
+################################
+#
+# File uploads
+#
+################################
+
+gem "shrine", "~> 2.5"
+gem "image_processing", "~> 0.4"
+gem "mini_magick", "~> 4.5"
+gem "fastimage", "~> 2.0"
 
 ################################
 #
@@ -37,9 +49,9 @@ gem "sass-rails", "~> 5.0"
 
 gem "coffee-rails", "~> 4.2"
 gem "uglifier", ">= 1.3.0"
-gem "bootstrap", "~> 4.0.0.alpha3.1"
+gem "bootstrap", "= 4.0.0.alpha3.1"
 gem "rails-timeago", "~> 2.14"
-gem "font-awesome-sass", "~> 4.6.2"
+gem "font-awesome-sass", "~> 4.7"
 
 source "https://rails-assets.org" do
   gem "rails-assets-tether", "~> 1.3"

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160808090424) do
+ActiveRecord::Schema.define(version: 20161121132136) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,12 +20,8 @@ ActiveRecord::Schema.define(version: 20160808090424) do
     t.integer  "user_id"
     t.string   "copyright"
     t.text     "comment"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["project_id"], name: "index_contribution_images_on_project_id", using: :btree
     t.index ["user_id"], name: "index_contribution_images_on_user_id", using: :btree
   end
@@ -46,12 +42,9 @@ ActiveRecord::Schema.define(version: 20160808090424) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "slug"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text     "image_data"
     t.index ["slug"], name: "index_profiles_on_slug", using: :btree
     t.index ["user_id"], name: "index_profiles_on_user_id", using: :btree
   end
@@ -64,10 +57,7 @@ ActiveRecord::Schema.define(version: 20160808090424) do
     t.boolean  "auto_approve_comments", default: false
     t.datetime "created_at",                            null: false
     t.datetime "updated_at",                            null: false
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
+    t.text     "image_data"
     t.index ["slug"], name: "index_projects_on_slug", using: :btree
   end
 
