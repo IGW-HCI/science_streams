@@ -10,11 +10,10 @@ gem "rails", "~> 5.0.0"
 gem "trailblazer", "~> 1.1"
 gem "trailblazer-rails", "~> 0.4"
 gem "pg", "~> 0.18"
-gem "puma", "~> 3.0"
+gem "puma", "~> 3.6"
 gem "dotenv-rails", "~> 2.1"
 gem "kaminari", "~> 0.16"
 gem "redis", "~> 3.0"
-gem "foreman", "~> 0.78"
 gem "turbolinks", "~> 5.0"
 gem "devise", "~> 4.2"
 gem "flutie", "~> 2.0"
@@ -55,6 +54,25 @@ gem "font-awesome-sass", "~> 4.7"
 
 source "https://rails-assets.org" do
   gem "rails-assets-tether", "~> 1.3"
+end
+
+################################
+#
+# Deployment
+#
+################################
+
+gem "foreman", "~> 0.8"
+
+group :development do
+  gem "capistrano", "~> 3.6"
+  gem "capistrano-rails", "~> 1.2"
+  gem "capistrano-foreman", "~> 1.2"
+  gem "capistrano-faster-assets", "~> 1.0"
+end
+
+group :production do
+  gem "therubyracer", "~> 0.12"
 end
 
 ################################
