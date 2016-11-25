@@ -84,3 +84,7 @@ test:
 production:
   <<: *default
   database: science_streams
+
+staging:
+  <<: *default
+  database: science_streams
