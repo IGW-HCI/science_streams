@@ -14,8 +14,8 @@ server "nova.iguw.tuwien.ac.at",
          forward_agent: true
        }
 
-set :foreman_template, "upstart"
-set :foreman_export_path, "/etc/init"
+set :foreman_template, "systemd"
+set :foreman_export_path, "/etc/systemd/system"
 set :foreman_options, user: "root"
 
 # role-based syntax
