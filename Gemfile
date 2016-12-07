@@ -17,6 +17,9 @@ gem "redis", "~> 3.0"
 gem "turbolinks", "~> 5.0"
 gem "devise", "~> 4.2"
 gem "flutie", "~> 2.0"
+gem "simple_form", "~> 3.3"
+gem "cocoon", "~> 1.2"
+gem "ruby_identicon", "~> 0.0.5"
 
 ################################
 #
@@ -48,7 +51,7 @@ gem "sass-rails", "~> 5.0"
 
 gem "coffee-rails", "~> 4.2"
 gem "uglifier", ">= 1.3.0"
-gem "bootstrap", "= 4.0.0.alpha3.1"
+gem "bootstrap", "= 4.0.0.alpha5"
 gem "rails-timeago", "~> 2.14"
 gem "font-awesome-sass", "~> 4.7"
 

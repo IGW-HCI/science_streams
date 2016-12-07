@@ -1,0 +1,11 @@
+<div class="container-narrow">
+  <%= simple_form_for @form, html: { class: "form-horizontal" } do |f| %>
+    <%= f.input :image, as: :file%>
+    <%= f.input :title %>
+    <%= f.input :description, as: :text %>
+    <%= f.input :about_us, as: :text %>
+    <%= f.input :slug %>
+
+    <%= f.submit %>
+  <% end %>
+</div>

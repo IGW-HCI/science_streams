@@ -11,8 +11,9 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery_ujs
+//= require turbolinks
 //= require tether
 //= require bootstrap
-//= require jquery_ujs
 //= require rails-timeago-all
-//= require turbolinks
+//= require cocoon

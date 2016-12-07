@@ -16,7 +16,7 @@ nav {
   ul {
     @extend .nav;
     @extend .navbar-nav;
-    @extend .pull-xs-right;
+    @extend .float-xs-right;
 
     >li {
       @extend .nav-item;

@@ -3,7 +3,7 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      get 'auth/login'
+      get "auth/login"
     end
   end
 
@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   resources :projects do
     member do
       get :contributions
+      get :manage_users
+      post :manage_users, to: "projects#add_and_remove_users"
     end
   end
 

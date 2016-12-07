@@ -56,7 +56,10 @@ module ScienceStreams
     # origins.map! { |url| /#{url}/ }
     # config.action_cable.allowed_request_origins = origins
 
-    config.autoload_paths << Rails.root.join("app", "uploaders")
-    config.eager_load_paths << Rails.root.join("app", "uploaders")
+    # config.autoload_paths << Rails.root.join("app", "uploaders")
+    # config.eager_load_paths << Rails.root.join("app", "uploaders")
+    #
+    # config.autoload_paths << Rails.root.join("app", "extensions")
+    # config.eager_load_paths << Rails.root.join("app", "extensions")
   end
 end

@@ -27,7 +27,7 @@
 .project-details__view-project-button {
   @extend .btn;
   @extend .btn-link;
-  @extend .pull-right;
+  @extend .float-xs-right;
 }
 
 .project-users {
@@ -41,7 +41,7 @@
 }
 
 .project-users__profile-image {
-  @extend .img-rounded;
+  @extend .rounded;
   border: 2px solid;
   border-color: $light-gray;
   display: inline-block;
@@ -60,18 +60,18 @@
 }
 
 .project-about {
-   @include make-row();
-   margin: 0 20px;
-   padding: 30px;
+  @include make-row();
+  margin: 0 20px;
+  padding: 30px;
 }
 
 .project-about__icon {
-  @include make-col-ready(1);
+  @include make-col-ready();
   @include make-col(1);
 }
 
 .project-about__description {
-  @include make-col-ready(11);
+  @include make-col-ready();
   @include make-col(11);
 
   >p {
