@@ -4,6 +4,8 @@ class ProjectsController < ApplicationController
     @projects = @model
   end
 
+  def contributions; end
+
   def show
     present Project::Update
     @project = @model
@@ -31,6 +33,4 @@ class ProjectsController < ApplicationController
       return redirect_to project_path(@model)
     end
   end
-
-  def contributions; end
 end

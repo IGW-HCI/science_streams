@@ -1,5 +1,5 @@
 <div class="card">
-    <%= image_tag image.image.url(:medium), class: 'card-img-top img-fluid', size: '400x200' %>
+    <%= image_tag image.image_url(:medium), class: 'card-img-top img-fluid', size: '400x200' %>
     <div class="card-block">
         <% if image.comment.present? %>
           <p class="card-text"><%= image.comment %></p>

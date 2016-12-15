@@ -1,14 +1,24 @@
 <div class="container">
     <h1><%= @project.title %></h1>
+
+
     <ul class="project-users">
         <%= render @project.users %>
     </ul>
 
     <br>
 
-    <div class="contributions-list">
-        <%= render @project.contributions %>
+    <div class="dropdown float-right">
+      <a class="btn btn-secondary dropdown-toggle" id="project-add-contribution" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Add Contribution
+      </a>
+
+      <div class="dropdown-menu" aria-labelledby="project-add-contribution">
+        <%= link_to 'Add Image', new_contribution_image_path, class: 'dropdown-item' %>
+        <%= link_to 'Add Text', new_contribution_text_path, class: 'dropdown-item' %>
+      </div>
     </div>
+
 </div>
 
 <div class="project-about-container--full">
