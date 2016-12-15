@@ -1,17 +1,16 @@
-class Contribution::Image < ApplicationRecord
+class Contribution::Text < ApplicationRecord
   class Create < Trailblazer::Operation
     include Model
-    model Contribution::Image, :create
+    model Contribution::Text, :create
 
     contract do
-      property :image, validates: { presence: true }
-      property :copyright, validates: { presence: true }
+      property :body, validates: { presence: true }
       property :project_id, validates: { presence: true }
       property :user_id, validates: { presence: true }
     end
 
     def process(params)
-      validate(params[:contribution_image], &:save)
+      validate(params[:contribution_text], &:save)
     end
 
     private
