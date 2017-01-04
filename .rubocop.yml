@@ -247,3 +247,5 @@ Style/ClassAndModuleChildren:
   Enabled: false
 Metrics/LineLength:
   Max: 110
+Bundler/OrderedGems:
+  Enabled: false
