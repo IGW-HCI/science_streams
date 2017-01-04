@@ -17,3 +17,4 @@
 //= require bootstrap
 //= require rails-timeago-all
 //= require cocoon
+//= require trix

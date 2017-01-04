@@ -55,6 +55,7 @@ gem "bootstrap", "= 4.0.0.alpha5"
 gem "rails-timeago", "~> 2.14"
 gem "font-awesome-sass", "~> 4.7"
 
+gem "trix", "~> 0.9.10"
 source "https://rails-assets.org" do
   gem "rails-assets-tether", "~> 1.3"
 end
